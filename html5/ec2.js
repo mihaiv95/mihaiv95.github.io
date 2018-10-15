@@ -9,8 +9,8 @@ function rezolva(){
 	var x1_re, x2_re, x1_im, x2_im;
 	var delta= b*b - 4*a*c;
 	if (delta >=0){
-		var x1= (-b + Math.sqrt(delta)) / (2*a);
-		var x2= (-b - Math.sqrt(delta)) / (2*a);
+		x1_re= (-b + Math.sqrt(delta)) / (2*a);
+		x2_re= (-b - Math.sqrt(delta)) / (2*a);
 		x1_im = x2_im =0;
 	}else{
 		x1_re = -b / (2*a);
