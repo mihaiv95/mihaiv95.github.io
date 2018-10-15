@@ -2,5 +2,5 @@
 Mobile dev UAB
 meh
 
-_italic text 
-*bold text*
+_italic text lolololol
+*bold text* lololo
