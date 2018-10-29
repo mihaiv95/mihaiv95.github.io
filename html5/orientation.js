@@ -1,5 +1,5 @@
 window.addEventListener("deviceorientation", on_device_orientation);
-document.getElementById("id_bussiness_version").innerHTML = "Bussiness version: 2018.10.29.0";
+document.getElementById("id_bussiness_version").innerHTML = "Bussiness version: 2018.10.29.1";
 var R = 10;
 function on_device_orientation(e){
     document.getElementById("id_alpha").innerHTML = e.alpha;
