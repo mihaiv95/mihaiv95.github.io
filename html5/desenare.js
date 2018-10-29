@@ -24,7 +24,7 @@ function start(){
     id_timer = setInterval(draw_circle, 16,angle_obj ,ctx, c.width, c.height);
     var my_worker = new Worker("calcul_prime.js");
     my_worker.onmessage = function(e){
-        document.getElementById("id_prime") = e.data;
+        document.getElementById("id_prime").innerHTML = e.data;
     }
 }
 
