@@ -10,7 +10,12 @@ function is_prime(n){
 onmessage = function(e){
     if (e.data == "stop"){
         stopped = true;
+    }else{
+        if (e.data == "start"){
+            stopped = false;
+        }
     }
+    
 }
 
 function calculeaza_prime(start_value){
