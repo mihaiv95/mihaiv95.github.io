@@ -1,7 +1,7 @@
-document.getElementById("id_bussiness_version").innerHTML = "Bussiness version: 2018.10.29.3";
+document.getElementById("id_bussiness_version").innerHTML = "Bussiness version: 2018.10.29.4";
 document.getElementById("id_start_button").addEventListener("click",start);
 document.getElementById("id_stop_button").addEventListener("click", stop);
-document.getElementById("id_stop_button").disabled = true;
+document.getElementById("id_stop_button").disabled = true
 var angle_obj = { angle:0}; // in grade
 
 
@@ -21,7 +21,7 @@ function start(){
     var ctx = c.getContext("2d");
     document.getElementById("id_start_button").disabled = true;
     document.getElementById("id_stop_button").disabled = false;
-    var my_worker = new Worker("calcul_prime.js");
+    my_worker = new Worker("calcul_prime.js");
     my_worker.onmessage = function(e){
         document.getElementById("id_prime").innerHTML = e.data;
     }
@@ -31,4 +31,5 @@ function start(){
 function stop(){    
     clearInterval(id_timer);
     document.getElementById("id_start_button").disabled = false;
+    my_worker.postMessage("stop");
 }
