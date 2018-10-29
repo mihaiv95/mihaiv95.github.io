@@ -7,7 +7,7 @@ function is_prime(n){
     return true;
 }
 
-self.onmessage() = function(e){
+onmessage = function(e){
     if (e.data == "stop"){
         stopped = true;
     }
