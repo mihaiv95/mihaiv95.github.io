@@ -1,4 +1,4 @@
-document.getElementById("id_bussiness_version").innerHTML = "Bussiness version: 2018.10.29.8";
+document.getElementById("id_bussiness_version").innerHTML = "Bussiness version: 2018.10.29.9";
 document.getElementById("id_start_button").addEventListener("click",start);
 document.getElementById("id_stop_button").addEventListener("click", stop);
 document.getElementById("id_stop_button").disabled = true

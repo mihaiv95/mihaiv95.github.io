@@ -13,7 +13,7 @@ onmessage = function(e){
     }
 }
 
-function calculeaza_prime(start_value_value){
+function calculeaza_prime(start_value){
     if (stopped){
 
     }  
