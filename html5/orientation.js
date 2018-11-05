@@ -20,11 +20,12 @@ function on_device_motion(e){
     var acc_z = e.accelerationIncludingGravity.z;
     var acc_x = e.accelerationIncludingGravity.x;
     var acc_y = e.accelerationIncludingGravity.y;
+
     document.getElementById("id_acc_z").innerHTML = acc_z.toFixed(2);
     document.getElementById("id_acc_z").innerHTML = acc_x.toFixed(2);
     document.getElementById("id_acc_z").innerHTML = acc_y.toFixed(2);
 
-    document.getElementById("id_rot_x").innerHTML = Math.atan(acc_x / acc_z);
-    document.getElementById("id_rot_y").innerHTML = Math.atan(acc_y / acc_z);
+    document.getElementById("id_rot_x").innerHTML = Math.atan(acc_x / acc_z) * 180 / Math.PI;
+    document.getElementById("id_rot_y").innerHTML = Math.atan(acc_y / acc_z) * 180 / Math.PI;
 }
 
