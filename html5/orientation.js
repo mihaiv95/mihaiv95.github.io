@@ -1,5 +1,5 @@
 window.addEventListener("deviceorientation", on_device_orientation);
-document.getElementById("id_bussiness_version").innerHTML = "Bussiness version: 2018.10.29.2";
+document.getElementById("id_bussiness_version").innerHTML = "Bussiness version: 2018.10.29.3";
 window.addEventListener("devicemotion", on_device_motion);
 var R = 10;
 function on_device_orientation(e){
@@ -17,8 +17,14 @@ function on_device_orientation(e){
 }
 
 function on_device_motion(e){
-    document.getElementById("id_acc_z").innerHTML = e.accelerationIncludingGravity.z.toFixed(2);
-    document.getElementById("id_acc_x").innerHTML = e.accelerationIncludingGravity.x.toFixed(2);
-    document.getElementById("id_acc_y").innerHTML = e.accelerationIncludingGravity.y.toFixed(2);
+    var acc_z = e.accelerationIncludingGravity.z;
+    var acc_x = e.accelerationIncludingGravity.x;
+    var acc_y = e.accelerationIncludingGravity.y;
+    document.getElementById("id_acc_z").innerHTML = acc_z.toFixed(2);
+    document.getElementById("id_acc_z").innerHTML = acc_x.toFixed(2);
+    document.getElementById("id_acc_z").innerHTML = acc_y.toFixed(2);
+
+    document.getElementById("id_rot_x").innerHTML = Math.atan(acc_x / acc_z);
+    document.getElementById("id_rot_y").innerHTML = Math.atan(acc_y / acc_z);
 }
 
