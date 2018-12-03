@@ -3,7 +3,7 @@ document.getElementById("id_bussiness_version").innerHTML = "Bussiness version: 
 // window.addEventListener("devicemotion", on_device_motion);
 var R = 10;
 function on_device_orientation(e){
-    var svg = document.getElementById("id_svg")
+    var svg = document.getElementById("id_svg");
     var circle = document.getElementById("id_circle");
     var R = 20;
 
