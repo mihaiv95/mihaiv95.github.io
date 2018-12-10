@@ -8,11 +8,11 @@ speak.onspeechend = on_speech_end;
 speak.lang = "en-US";
 
 function on_speak(){
-
+    speak.start();
 }
 
 function on_speech_end(){
-
+    speak.end();
 }
 
 function on_result(e){
